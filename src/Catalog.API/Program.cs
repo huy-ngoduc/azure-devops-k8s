@@ -28,7 +28,6 @@ namespace Catalog.API
             {
                 var logger = services.GetRequiredService<ILogger<Program>>();
                 logger.LogError(exception, "An error occured during initializing products");
-                logger.LogError(exception, "test build process");
             }
             await host.RunAsync();
         }
