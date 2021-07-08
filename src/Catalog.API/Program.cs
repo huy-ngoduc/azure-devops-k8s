@@ -27,7 +27,7 @@ namespace Catalog.API
             catch (Exception exception)
             {
                 var logger = services.GetRequiredService<ILogger<Program>>();
-                logger.LogError(exception, "An error occured during initializing products");
+                logger.LogError(exception, "An error occured during initializing products.");
             }
             await host.RunAsync();
         }
